@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تطبيق التقويم</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="calendar-container">
+    <div class="calendar-header">
+      <button id="prevMonth">⬅️</button>
+      <h2 id="monthYear"></h2>
+      <button id="nextMonth">➡️</button>
+    </div>
+
+    <div class="calendar-days">
+      <div>الأحد</div>
+      <div>الاثنين</div>
+      <div>الثلاثاء</div>
+      <div>الأربعاء</div>
+      <div>الخميس</div>
+      <div>الجمعة</div>
+      <div>السبت</div>
+    </div>
+
+    <div class="calendar-grid" id="calendarGrid"></div>
+  </div>
+  <!-- نافذة إضافة/تعديل حدث -->
+<div id="eventModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+    <h3 id="modalTitle">إدارة الحدث</h3>
+    <input type="text" id="eventInput" placeholder="اكتب الحدث هنا...">
+    <button id="saveEvent">💾 حفظ</button>
+    <button id="deleteEvent">🗑️ حذف</button>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
